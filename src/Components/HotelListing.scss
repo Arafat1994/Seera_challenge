@@ -1,0 +1,91 @@
+
+
+.ResultContainer{
+    text-align: center; 
+    height: 100%;
+    border-radius: 10px;
+    padding:0px;
+    .ResultsDiv{
+        display: grid;
+        grid-template-columns: 33% 66%;
+        justify-content: space-around;
+        align-items: baseline;
+        .filterLeft{ 
+            border-radius: 10px ;
+            display: grid;
+            grid-template-columns: 75%;
+            justify-content:space-around;
+            align-items: center;
+            .searchInp{
+                align-self: center;
+                height: 20px;
+                border: 1px solid black;
+                border-radius: 10px;
+                padding:5px ; 
+                margin-bottom: 5px;
+
+            } 
+            p{
+                align-self: center;
+                text-align: left;
+                margin-bottom: 0;
+            }
+            .slidderInp{
+                align-self: center;
+                margin-bottom: 5px;
+                background-color: black;
+            }
+        }
+        .dataRight{
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns:50% 50% ;
+            justify-content:space-around ; 
+            align-items: baseline;
+            padding: 10px ;
+            .TotalNight{
+                text-align: left ;
+                .headText{
+                    font-weight: bold;
+                }
+            }
+            .FilteredButton{
+                
+                text-align: end ;
+                button{
+                    width:120px;
+                    height: 35px;
+                    margin-right: 10px ;
+                    background-color: transparent;
+                }
+
+            }
+            .HotelDetails{
+                border: 1px solid black;
+                border-radius: 5px; 
+                text-align: left;
+                padding: 5px;
+                margin: 5px ;
+                align-self: stretch;
+                .headText{
+                    font-weight: bold;
+                }
+                
+                 
+            }
+            
+            @media screen and (max-width: 620px) {
+            display: flex;
+            flex-wrap: wrap;
+            .HotelDetails{
+                width:100%
+            }
+            }
+
+        }
+        @media screen and (max-width: 820px) {
+            grid-template-columns: auto;
+        }
+
+    }
+}

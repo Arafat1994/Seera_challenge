@@ -1,0 +1,62 @@
+.searchArea {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px;
+
+    form {
+
+        .MarginForm {
+            border: 1px solig green;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            margin: 0 0 16px 0;
+            padding: 20px;
+            text-align: center;
+
+            div {
+                align-self: center;
+                margin: 15px 10px;
+
+                label {
+                    font-size: 20px;
+                    display: inline-block;
+                    text-align: left;
+                    width: 60px;
+                }
+
+                input {
+                    height: 40px;
+                    width: 200px;
+                    font-size: 20px;
+                }
+
+                button {
+                    width: 140px;
+                    height: 40px;
+                    font-size: 20px;
+                    border: 1px solid black;
+                    margin: 15px 10px;
+                }
+            }
+
+            @media screen and (max-width: 820px) {
+                grid-template-columns: auto auto;
+            }
+
+            @media screen and (max-width: 620px) {
+                grid-template-columns: auto;
+            }
+        }
+
+    }
+
+}
