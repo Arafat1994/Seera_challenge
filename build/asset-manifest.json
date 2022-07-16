@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/seera_challenge/static/css/main.d3d6fdfb.css",
+    "main.js": "/seera_challenge/static/js/main.71650d39.js",
+    "static/js/787.47c93c61.chunk.js": "/seera_challenge/static/js/787.47c93c61.chunk.js",
+    "index.html": "/seera_challenge/index.html",
+    "main.d3d6fdfb.css.map": "/seera_challenge/static/css/main.d3d6fdfb.css.map",
+    "main.71650d39.js.map": "/seera_challenge/static/js/main.71650d39.js.map",
+    "787.47c93c61.chunk.js.map": "/seera_challenge/static/js/787.47c93c61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3d6fdfb.css",
+    "static/js/main.71650d39.js"
+  ]
+}
