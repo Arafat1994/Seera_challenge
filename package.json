@@ -2,7 +2,7 @@
   "name": "seera_cahllenge",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://arafat1994.github.io/Seera_challenge",
+  "homepage": "https://arafat1994.github.io/seera_challenge/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
