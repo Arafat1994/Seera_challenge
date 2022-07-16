@@ -12,6 +12,7 @@ export default function HotelListing() {
     const { SortingData, HotelsData, HandleFilter } = UseFilters(data, daysNum)
 
 
+    // use this to render data once it come 
     const HotelDataToHtml = HotelsData?.map((res) => {
         return (
             <div className="HotelDetails" key={Math.random()}>

@@ -4,12 +4,14 @@ const UseFilter = (data , daysNum ) => {
 
     const [HotelsData, SetHotelsData] = useState(data);
 
+    // used to sort data by name or low price 
     const SortingData = (value) => {
         let actual_show = [...data];
         if (value === "byPrice") { actual_show.sort((a, b) => a.price - b.price); }
         else if (value = "byName") { actual_show.sort((a, b) => a.name.localeCompare(b.name)); }
         SetHotelsData(actual_show)
     }
+    // used to filter data based on name of price 
     const HandleFilter = (event, FilterType) => {
         event.preventDefault();
         let value = event.target.value;

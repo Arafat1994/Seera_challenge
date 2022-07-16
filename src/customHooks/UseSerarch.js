@@ -9,6 +9,7 @@ export default function useSearch( fromDate , toDate ) {
     const dispatch = useDispatch();
     const Navigate = useNavigate();
 
+    //use this function to delete the trella comma at api 
     String.prototype.replaceAt = function (index, replacement) {
         if (index >= this.length) {
             return this.valueOf();
@@ -17,12 +18,14 @@ export default function useSearch( fromDate , toDate ) {
         return this.substring(0, index) + replacement + this.substring(index + 1);
     }
 
+    // use this function to caculate the date difference between fromdate and todate 
     const dateCalc = () => {
         var date1 = new Date(fromDate)
         var date2 = new Date(toDate);
         return ((date2.getTime() - date1.getTime()) / (1000 * 60 * 60 * 24))
     }
 
+    //get data from api and make filter on that data and finally pass filtered data to redux store 
     const searchHandler = (e) => {
         e.preventDefault()
         const daysNum = dateCalc(fromDate, toDate);

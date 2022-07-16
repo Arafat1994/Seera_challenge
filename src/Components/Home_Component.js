@@ -13,11 +13,12 @@ export default function HomeComp() {
     const [toDate, setToDate] = useState();
     const { searchHandler } = useSearch(fromDate, toDate);
 
+
     useEffect(() => {
         getIntialDate();
     }, [])
 
-
+// use this functioon to put the date of today once user open home page 
     const getIntialDate = () => {
         const todayDate = new Date();
         var dateControl = document.querySelectorAll('input[type="date"]');
@@ -37,15 +38,15 @@ export default function HomeComp() {
             <Header header=" Search Hotel " />
             <form>
                 <div className="MarginForm">
-                    <div>
+                    <div className="FromDateDiv">
                         <label> From : </label>
                         <input className="fromdate" type="date" ref={fromDateRef} onChange={(e) => { setFormDate(e.target.value) }} />
                     </div>
-                    <div>
+                    <div  className="ToDateDiv">
                         <label > To :  </label>
                         <input className="todate" type="date" ref={toDateRef} onChange={(e) => { setToDate(e.target.value) }} />
                     </div>
-                    <div>
+                    <div className="ButtonDiv">
                         <button onClick={searchHandler}>  Search   </button>
                     </div>
                 </div>
